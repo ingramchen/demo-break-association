@@ -5,25 +5,25 @@ Demostration how to break deep associations in RDBMS design
 
 ### Sample codes
 
-* schema
+##### Schema
 
 all database schema is in `src/main/resources/db-schema.sql`. the sample codes use HSQLDB for
 demostration. 
 
-* break association
+##### Break association
 
 `SocialDao` and `SocialDaoTest` isolated from concrete classes `Article` and `Comment`.
 The codes is modular and easier to test. 
 
-* polymophic associations
+##### ppolymophic associations
 
 `Comment` and `Article` both implementss LikeableEntity, demostration how to do 
 polymorphic associations. see `CommentService.likeComment` and `ArticleService.likeArticle`.
 
-* multiple associations
+##### Multiple associations
 
 `Article` demo how to implement two associations at the same time. Article can implement 
-LikeableEntity and ShareableEntity interfaces because it use UUID as primary key.
+`LikeableEntity` and `ShareableEntity` interfaces because it use UUID as primary key.
 
 ### Run tests
 
