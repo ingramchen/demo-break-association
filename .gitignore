@@ -1,0 +1,13 @@
+bin/
+gen/
+target/
+.classpath
+.project
+.settings/
+build/
+.gradle/
+.metadata
+.DS_Store
+*.swp
+*.pyc
+mem.h2.db
