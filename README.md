@@ -15,7 +15,7 @@ demostration.
 `SocialDao` and `SocialDaoTest` isolated from concrete classes `Article` and `Comment`.
 The codes is modular and easier to test. 
 
-##### ppolymophic associations
+##### Polymophic associations
 
 `Comment` and `Article` both implementss LikeableEntity, demostration how to do 
 polymorphic associations. see `CommentService.likeComment` and `ArticleService.likeArticle`.
