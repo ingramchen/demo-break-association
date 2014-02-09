@@ -5,8 +5,6 @@ package io.ingramchen.association.social;
  * {@link SocialDao#makeShareable(ShareableEntity)} before saving in db.
  * 
  * 
- * this interface maps to database table 'Shareable'
- * 
  * @author ingram
  * 
  */

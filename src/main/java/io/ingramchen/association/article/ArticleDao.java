@@ -25,8 +25,8 @@ public class ArticleDao
     public Article createArticle(final Account author, final String content)
     {
         /*
-         * Article, Shareable, Likeable use the same primary key. so we can give single entity more
-         * than one behaviors.
+         * Article, ShareableEntity, LikeableEntity use the same primary key. so we can give single
+         * entity more than one behaviors. primary key use UUID so it won't collision.
          * 
          * This is impossible in Hibernate "Table per subclass" strategy
          * (http://docs.jboss.org/hibernate

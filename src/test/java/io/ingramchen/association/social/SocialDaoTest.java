@@ -33,7 +33,7 @@ public class SocialDaoTest extends JdbcTestCases
     {
         final LikeableEntity likeable = socialDao.generateLikeable();
         socialDao.deleteLikeable(likeable.getLikeableId());
-        assertFalse("deleted should not be likeable anymore", socialDao.isLikeable(likeable));
+        assertFalse("deleted should not be likeable anymore", socialDao.isSavedAsLikeable(likeable));
     }
 
     @Test
@@ -44,7 +44,7 @@ public class SocialDaoTest extends JdbcTestCases
         socialDao.like(likeable, createAccount("Louis"));
         socialDao.deleteLikeable(likeable.getLikeableId());
 
-        assertFalse("deleted should not be likeable anymore", socialDao.isLikeable(likeable));
+        assertFalse("deleted should not be likeable anymore", socialDao.isSavedAsLikeable(likeable));
         assertFalse("liked should be purged", socialDao.isLiked(likeable));
     }
 

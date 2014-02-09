@@ -8,9 +8,9 @@ import io.ingramchen.association.social.SocialDao;
 import java.util.UUID;
 
 /**
- * Article are both likeable and shareable. this is possible because Likeable and Shareable tables
- * share the same primary key. see {@link ArticleDao#createArticle(Account, String)} and
- * {@link SocialDao}
+ * Article are both likeable and shareable. this is possible because LikeableEntity and
+ * ShareableEntity tables share the same primary key. see
+ * {@link ArticleDao#createArticle(Account, String)} and {@link SocialDao}
  * 
  * @author ingram
  * 

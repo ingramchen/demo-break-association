@@ -40,8 +40,8 @@ public class ArticleServiceTest extends JdbcTestCases
         assertEquals("My great post", article.getContent());
         assertEquals(author, article.getAuthor());
         assertEquals(article, articleDao.findById(article.getArticleId()));
-        assertTrue("article should be a shareable entity", socialDao.isShareable(article));
-        assertTrue("article should be a likeable entity", socialDao.isLikeable(article));
+        assertTrue("article should be a shareable entity", socialDao.isSavedAsShareable(article));
+        assertTrue("article should be a likeable entity", socialDao.isSavedAsLikeable(article));
     }
 
 }

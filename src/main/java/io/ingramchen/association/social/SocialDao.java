@@ -19,7 +19,7 @@ public class SocialDao
 
     public void deleteLikeable(final String likeableId)
     {
-        jdbcTemplate.update("DELETE FROM Likeable WHERE likeable_id = ? ", likeableId);
+        jdbcTemplate.update("DELETE FROM LikeableEntity WHERE likeable_id = ? ", likeableId);
     }
 
     @VisibleForTesting
@@ -64,19 +64,12 @@ public class SocialDao
 
     private void insertLikeableId(final String id)
     {
-        jdbcTemplate.update("INSERT INTO Likeable (likeable_id) VALUES (?)", id);
+        jdbcTemplate.update("INSERT INTO LikeableEntity (likeable_id) VALUES (?)", id);
     }
 
     private void insertShareableId(final String id)
     {
-        jdbcTemplate.update("INSERT INTO Shareable (shareable_id) VALUES (?)", id);
-    }
-
-    public boolean isLikeable(final LikeableEntity likeable)
-    {
-        return jdbcTemplate.queryForObject("SELECT COUNT(*) FROM Likeable WHERE likeable_id = ?",
-            Integer.class,
-            likeable.getLikeableId()) > 0;
+        jdbcTemplate.update("INSERT INTO ShareableEntity (shareable_id) VALUES (?)", id);
     }
 
     public boolean isLiked(final LikeableEntity likeable)
@@ -86,9 +79,16 @@ public class SocialDao
             likeable.getLikeableId()) > 0;
     }
 
-    public boolean isShareable(final ShareableEntity shareable)
+    public boolean isSavedAsLikeable(final LikeableEntity likeable)
     {
-        return jdbcTemplate.queryForObject("SELECT COUNT(*) FROM Shareable WHERE shareable_id = ?",
+        return jdbcTemplate.queryForObject("SELECT COUNT(*) FROM LikeableEntity WHERE likeable_id = ?",
+            Integer.class,
+            likeable.getLikeableId()) > 0;
+    }
+
+    public boolean isSavedAsShareable(final ShareableEntity shareable)
+    {
+        return jdbcTemplate.queryForObject("SELECT COUNT(*) FROM ShareableEntity WHERE shareable_id = ?",
             Integer.class,
             shareable.getShareableId()) > 0;
     }

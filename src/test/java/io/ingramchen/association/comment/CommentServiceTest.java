@@ -34,7 +34,7 @@ public class CommentServiceTest extends JdbcTestCases
         service.deleteComment(comment.getCommentId());
 
         assertNull(commentDao.findById(comment.getCommentId()));
-        assertFalse("deleted comment should not likeable", socialDao.isLikeable(comment));
+        assertFalse("deleted comment should not likeable", socialDao.isSavedAsLikeable(comment));
     }
 
     @Test
@@ -51,7 +51,7 @@ public class CommentServiceTest extends JdbcTestCases
         assertEquals(article.getArticleId(), comment.getArticleId());
 
         assertEquals(comment, commentDao.findById(comment.getCommentId()));
-        assertTrue("comment should be a likeable entity", socialDao.isLikeable(comment));
+        assertTrue("comment should be a likeable entity", socialDao.isSavedAsLikeable(comment));
     }
 
     @Test

@@ -5,8 +5,6 @@ package io.ingramchen.association.social;
  * {@link SocialDao#makeLikeable(LikeableEntity)} before saving in db.
  * 
  * 
- * this interface maps to database table 'Likeable'
- * 
  * @author ingram
  * 
  */
