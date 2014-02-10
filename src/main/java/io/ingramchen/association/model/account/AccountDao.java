@@ -1,4 +1,4 @@
-package io.ingramchen.association.account;
+package io.ingramchen.association.model.account;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

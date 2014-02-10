@@ -1,9 +1,9 @@
-package io.ingramchen.association.article;
+package io.ingramchen.association.model.article;
 
-import io.ingramchen.association.account.Account;
-import io.ingramchen.association.social.LikeableEntity;
-import io.ingramchen.association.social.ShareableEntity;
-import io.ingramchen.association.social.SocialDao;
+import io.ingramchen.association.model.account.Account;
+import io.ingramchen.association.model.social.LikeableEntity;
+import io.ingramchen.association.model.social.ShareableEntity;
+import io.ingramchen.association.model.social.SocialDao;
 
 import java.util.UUID;
 

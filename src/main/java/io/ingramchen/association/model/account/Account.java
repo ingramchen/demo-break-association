@@ -1,4 +1,4 @@
-package io.ingramchen.association.account;
+package io.ingramchen.association.model.account;
 
 import java.util.UUID;
 

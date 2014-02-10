@@ -1,11 +1,11 @@
 package io.ingramchen.association;
 
-import io.ingramchen.association.account.Account;
-import io.ingramchen.association.account.AccountDao;
-import io.ingramchen.association.article.Article;
-import io.ingramchen.association.article.ArticleDao;
-import io.ingramchen.association.comment.CommentDao;
-import io.ingramchen.association.social.SocialDao;
+import io.ingramchen.association.model.account.Account;
+import io.ingramchen.association.model.account.AccountDao;
+import io.ingramchen.association.model.article.Article;
+import io.ingramchen.association.model.article.ArticleDao;
+import io.ingramchen.association.model.comment.CommentDao;
+import io.ingramchen.association.model.social.SocialDao;
 
 import javax.sql.DataSource;
 

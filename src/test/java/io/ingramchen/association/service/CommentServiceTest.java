@@ -1,12 +1,13 @@
-package io.ingramchen.association.comment;
+package io.ingramchen.association.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import io.ingramchen.association.JdbcTestCases;
-import io.ingramchen.association.account.Account;
-import io.ingramchen.association.article.Article;
+import io.ingramchen.association.model.account.Account;
+import io.ingramchen.association.model.article.Article;
+import io.ingramchen.association.model.comment.Comment;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
-package io.ingramchen.association.social;
+package io.ingramchen.association.model.social;
 
-import io.ingramchen.association.account.Account;
+import io.ingramchen.association.model.account.Account;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package io.ingramchen.association.social;
+package io.ingramchen.association.model.social;
 
 /**
  * represent the entity is likeable. any entity implements {@link LikeableEntity} requires call

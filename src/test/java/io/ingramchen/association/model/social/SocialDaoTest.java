@@ -1,13 +1,13 @@
-package io.ingramchen.association.social;
+package io.ingramchen.association.model.social;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import io.ingramchen.association.JdbcTestCases;
-import io.ingramchen.association.account.Account;
-import io.ingramchen.association.article.Article;
-import io.ingramchen.association.comment.Comment;
-import io.ingramchen.association.comment.CommentServiceTest;
+import io.ingramchen.association.model.account.Account;
+import io.ingramchen.association.model.article.Article;
+import io.ingramchen.association.model.comment.Comment;
+import io.ingramchen.association.service.CommentServiceTest;
 
 import org.junit.Test;
 

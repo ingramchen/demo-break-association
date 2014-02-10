@@ -1,8 +1,8 @@
-package io.ingramchen.association.comment;
+package io.ingramchen.association.model.comment;
 
-import io.ingramchen.association.account.Account;
-import io.ingramchen.association.article.Article;
-import io.ingramchen.association.social.LikeableEntity;
+import io.ingramchen.association.model.account.Account;
+import io.ingramchen.association.model.article.Article;
+import io.ingramchen.association.model.social.LikeableEntity;
 
 import java.util.UUID;
 

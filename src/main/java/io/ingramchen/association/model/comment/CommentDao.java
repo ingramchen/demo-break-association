@@ -1,9 +1,9 @@
-package io.ingramchen.association.comment;
+package io.ingramchen.association.model.comment;
 
-import io.ingramchen.association.account.Account;
-import io.ingramchen.association.account.AccountDao;
-import io.ingramchen.association.article.Article;
-import io.ingramchen.association.social.SocialDao;
+import io.ingramchen.association.model.account.Account;
+import io.ingramchen.association.model.account.AccountDao;
+import io.ingramchen.association.model.article.Article;
+import io.ingramchen.association.model.social.SocialDao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

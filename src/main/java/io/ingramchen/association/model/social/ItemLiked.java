@@ -1,6 +1,6 @@
-package io.ingramchen.association.social;
+package io.ingramchen.association.model.social;
 
-import io.ingramchen.association.account.Account;
+import io.ingramchen.association.model.account.Account;
 
 import java.util.UUID;
 
@@ -13,7 +13,6 @@ public class ItemLiked
 
     private final String itemLikedId;
     private final String likeableId;
-
     private final Account liker;
 
     ItemLiked(final String itemLikedId, final String likeableId, final Account liker)

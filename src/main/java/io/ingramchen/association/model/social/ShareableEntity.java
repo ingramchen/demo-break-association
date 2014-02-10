@@ -1,4 +1,4 @@
-package io.ingramchen.association.social;
+package io.ingramchen.association.model.social;
 
 /**
  * represent the entity can be shared. any entity implements {@link ShareableEntity} requires call

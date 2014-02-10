@@ -1,4 +1,7 @@
-package io.ingramchen.association.account;
+package io.ingramchen.association.service;
+
+import io.ingramchen.association.model.account.Account;
+import io.ingramchen.association.model.account.AccountDao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

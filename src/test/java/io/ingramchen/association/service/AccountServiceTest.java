@@ -1,7 +1,8 @@
-package io.ingramchen.association.account;
+package io.ingramchen.association.service;
 
 import static org.junit.Assert.assertEquals;
 import io.ingramchen.association.JdbcTestCases;
+import io.ingramchen.association.model.account.Account;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
